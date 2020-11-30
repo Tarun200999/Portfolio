@@ -1,0 +1,48 @@
+.main{
+    padding: 50px;
+    background-image: radial-gradient( circle farthest-corner at 1.3% 2.8%,  rgba(239,249,249,1) 0%, rgba(182,199,226,1) 100.2% );
+}
+.profile{
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    border-radius: 20px;
+}
+.left{
+    flex:40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    position: fixed;
+}
+.profile_image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+
+}
+.profile_info{
+display: flex;
+flex-direction: column;
+padding: 20px;
+}
+.profile_info>h5{
+    font-weight: 100;
+}
+.profile_links{
+padding: 20px;
+display: flex;
+align-items: center;
+justify-content:center;
+}
+.right{
+    flex: 60%;
+    overflow: auto;
+}
+
+@media (max-width: 700px) {
+    .profile {
+      flex-direction: column;
+    }
+  }
